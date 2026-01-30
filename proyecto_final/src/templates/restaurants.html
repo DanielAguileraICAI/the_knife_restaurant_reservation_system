@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block body_class %}page-restaurants{% endblock %}
+
+{% block content %}
+  <div class="mb-4">
+    <h2 class="h3" style="color: var(--primary); font-weight: 700;">Nuestros Restaurantes</h2>
+    <p class="text-muted-custom">Explora nuestra selección de restaurantes en toda España</p>
+  </div>
+
+  <!-- Filters Section -->
+  <div class="filter-section">
+    <div class="row g-3">
+      <div class="col-md-3">
+        <label class="filter-label">Buscar</label>
+        <input id="search" class="form-control" placeholder="Nombre, tipo de comida, ciudad..."/>
+      </div>
+      <div class="col-md-2">
+        <label class="filter-label">Estrellas Michelin</label>
+        <select id="filterEstrellas" class="form-select">
+          <option value="">Todas</option>
+          <option value="3">⭐⭐⭐ (3 estrellas)</option>
+          <option value="2">⭐⭐ (2 estrellas)</option>
+          <option value="1">⭐ (1 estrella)</option>
+          <option value="0">Sin estrellas</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label class="filter-label">Presupuesto</label>
+        <select id="filterPresupuesto" class="form-select">
+          <option value="">Todos</option>
+          <option value="5">€€€€€ (Muy alto)</option>
+          <option value="4">€€€€ (Alto)</option>
+          <option value="3">€€€ (Medio)</option>
+          <option value="2">€€ (Económico)</option>
+          <option value="1">€ (Muy económico)</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label class="filter-label">Tipo de Comida</label>
+        <select id="filterTipoComida" class="form-select">
+          <option value="">Todos los tipos</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label class="filter-label">🚫 Alergia</label>
+        <select id="filterAlergia" class="form-select">
+          <option value="">Sin filtro</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div id="restaurants-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <!-- restaurant cards populated by JS -->
+  </div>
+
+{% endblock %}

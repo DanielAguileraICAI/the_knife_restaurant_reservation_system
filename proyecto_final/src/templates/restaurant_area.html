@@ -1,0 +1,278 @@
+{% extends 'base.html' %}
+
+{% block body_class %}page-restaurant-area{% endblock %}
+
+{% block content %}
+  <div class="mb-4">
+    <h2 class="h3" style="color: var(--primary); font-weight: 700;">Área Restaurante</h2>
+    <p class="text-muted-custom">Gestiona las reservas y facturas de tu restaurante</p>
+  </div>
+
+  <!-- Restaurant Login Form -->
+  <div class="card mb-4" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+    <div class="card-body">
+      <h5 class="card-title" style="color: var(--primary);">Acceder al Panel de Gestión</h5>
+      <form id="restaurantLoginForm" class="row g-3">
+        <div class="col-md-10">
+          <label for="restaurantId" class="form-label">ID Restaurante</label>
+          <input type="text" class="form-control" id="restaurantId" placeholder="Ingresa el ID del restaurante (Ej: AA001AN)" required>
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+          <button type="submit" class="btn btn-primary w-100">Acceder</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Restaurant Panel -->
+  <div id="restaurantPanel" style="display: none;">
+    <!-- Restaurant Info -->
+    <div class="card mb-4" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="card-title mb-0" style="color: var(--primary);">Información del Restaurante</h5>
+          <button class="btn btn-sm btn-warning" onclick="cerrarSesionRestaurante()">
+            <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+          </button>
+        </div>
+        <div id="restaurantInfo"></div>
+      </div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-4">
+        <div class="card text-center" style="background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white;">
+          <div class="card-body">
+            <h3 class="mb-0" id="totalReservasRestaurante">0</h3>
+            <p class="mb-0 small">Reservas Totales</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="background: linear-gradient(135deg, #00D4FF, #0A7AFF); color: white;">
+          <div class="card-body">
+            <h3 class="mb-0" id="totalFacturasRestaurante">0</h3>
+            <p class="mb-0 small">Facturas Generadas</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="background: linear-gradient(135deg, #667EEA, #764BA2); color: white;">
+          <div class="card-body">
+            <h3 class="mb-0" id="ingresosTotales">0€</h3>
+            <p class="mb-0 small">Ingresos Totales</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-tabs mb-3" id="restaurantTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="reservas-tab" data-bs-toggle="tab" data-bs-target="#reservas-content" type="button" role="tab">
+          <i class="fas fa-calendar-check"></i> Reservas
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="analytics-tab" data-bs-toggle="tab" data-bs-target="#analytics-content" type="button" role="tab">
+          <i class="fas fa-chart-line"></i> Análisis de Datos
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tabs Content -->
+    <div class="tab-content" id="restaurantTabsContent">
+      <!-- Reservas Tab -->
+      <div class="tab-pane fade show active" id="reservas-content" role="tabpanel">
+        <div class="card" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+          <div class="card-body">
+            <h5 class="card-title" style="color: var(--primary);">Reservas del Restaurante</h5>
+            <div id="reservasRestaurante"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Analytics Tab -->
+      <div class="tab-pane fade" id="analytics-content" role="tabpanel">
+        <!-- Clientes sin valorar -->
+        <div class="card mb-4" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+          <div class="card-body">
+            <h5 class="card-title" style="color: var(--primary);">
+              <i class="fas fa-envelope"></i> Clientes Sin Valoración
+            </h5>
+            <p class="text-muted-custom">Envía recordatorios a clientes que aún no han valorado tu restaurante</p>
+            <div id="clientesSinValorar"></div>
+          </div>
+        </div>
+
+        <!-- Estadísticas y Gráficos -->
+        <div class="row g-3">
+          <!-- Gráfico de días completo -->
+          <div class="col-12">
+            <div class="card" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+              <div class="card-body">
+                <h5 class="card-title" style="color: var(--primary);">
+                  <i class="fas fa-calendar-week"></i> Reservas por Día de la Semana
+                </h5>
+                <div id="diaMasConcurrido"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Gasto medio y Top platos -->
+          <div class="col-md-4">
+            <div class="card h-100" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+              <div class="card-body">
+                <h5 class="card-title" style="color: var(--primary);">
+                  <i class="fas fa-euro-sign"></i> Gasto Medio por Persona
+                </h5>
+                <div id="gastoMedio"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card h-100" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+              <div class="card-body">
+                <h5 class="card-title" style="color: var(--primary);">
+                  <i class="fas fa-utensils"></i> Top 3 Platos Más Pedidos
+                </h5>
+                <div id="topPlatos"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Gráfico Gaussiano Comparativo -->
+          <div class="col-12">
+            <div class="card" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+              <div class="card-body">
+                <h5 class="card-title" style="color: var(--primary);">
+                  <i class="fas fa-chart-area"></i> Comparativa de Precio con el Mercado
+                </h5>
+                <div id="graficoPrecioComparativo"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- No Results Message -->
+  <div id="noRestaurant" style="display: none;">
+    <div class="alert alert-info" style="background: var(--glass-bg);">
+      No se encontró el restaurante con ese ID.
+    </div>
+  </div>
+
+  <!-- Modal para Crear Factura -->
+  <div class="modal fade" id="crearFacturaModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+        <div class="modal-header" style="border-bottom: 1px solid var(--glass-border);">
+          <h5 class="modal-title" style="color: var(--primary);">Crear Factura</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="crearFacturaForm">
+            <input type="hidden" id="facturaIdReserva">
+            <input type="hidden" id="facturaIdCliente">
+            <input type="hidden" id="facturaIdRestaurante">
+            
+            <div class="mb-3">
+              <label class="form-label fw-bold">Reserva</label>
+              <p id="facturaReservaInfo" class="text-muted-custom mb-0"></p>
+            </div>
+
+            <div class="mb-3">
+              <h6 class="fw-bold">Platos Seleccionados</h6>
+              <div id="platosSeleccionados" class="mb-2">
+                <!-- Platos añadidos aparecerán aquí -->
+              </div>
+              <button type="button" class="btn btn-sm btn-success" onclick="abrirModalAnadirPlato()">
+                <i class="fas fa-plus"></i> Añadir Plato
+              </button>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-bold">Total Factura</label>
+              <h4 id="totalFactura" style="color: var(--primary);">0.00€</h4>
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Generar Factura</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para Añadir Plato -->
+  <div class="modal fade" id="anadirPlatoModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+        <div class="modal-header" style="border-bottom: 1px solid var(--glass-border);">
+          <h5 class="modal-title" style="color: var(--primary);">Añadir Plato</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="anadirPlatoForm">
+            <div class="mb-3">
+              <label for="selectPlato" class="form-label fw-bold">Selecciona el Plato</label>
+              <select class="form-select" id="selectPlato" required>
+                <option value="">Cargando platos...</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="cantidadPlato" class="form-label fw-bold">Cantidad</label>
+              <input type="number" class="form-control" id="cantidadPlato" min="1" value="1" required>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Añadir</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para Enviar Email -->
+  <div class="modal fade" id="enviarEmailModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+        <div class="modal-header" style="border-bottom: 1px solid var(--glass-border);">
+          <h5 class="modal-title" style="color: var(--primary);">
+            <i class="fas fa-envelope"></i> Enviar Recordatorio
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label fw-bold">Para:</label>
+            <p id="emailDestinatario" class="text-muted-custom mb-0"></p>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-bold">Asunto:</label>
+            <input type="text" class="form-control" id="emailAsunto" value="¿Qué te pareció tu visita?" readonly>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-bold">Mensaje:</label>
+            <textarea class="form-control" id="emailMensaje" rows="8" readonly></textarea>
+          </div>
+          <div class="alert alert-info mb-0">
+            <i class="fas fa-info-circle"></i> Vista previa del email que se enviará al cliente
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid var(--glass-border);">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" onclick="enviarEmailRecordatorio()">
+            <i class="fas fa-paper-plane"></i> Enviar Email
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/restaurant_area.js"></script>
+{% endblock %}

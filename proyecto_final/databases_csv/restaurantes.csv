@@ -1,0 +1,60 @@
+ID_RESTAURANTE,NOMBRE,CIUDAD,CCAA,TIPO_COMIDA,PRESUPUESTO,ESTRELLA_MICH,CADENA
+MB001PV,Martín Berasategui,Lasarte-Oria,País Vasco,alta cocina,5,3,NULL
+AZ002PV,Azurmendi,Larrabetzu,País Vasco,vanguardia,5,3,NULL
+AA003PV,Arzak,San Sebastián,País Vasco,vasca,5,3,NULL
+DR001MD,DiverXO,Madrid,Comunidad de Madrid,vanguardia,5,3,NULL
+SV002MD,Saddle,Madrid,Comunidad de Madrid,internacional,4,1,NULL
+RE003MD,Ramón Freixa Madrid,Madrid,Comunidad de Madrid,alta cocina,5,2,NULL
+AP001AN,Aponiente,El Puerto de Santa María,Andalucía,marinera,5,3,NULL
+AA002AN,Abantal,Sevilla,Andalucía,andaluza,4,1,NULL
+ES003AN,El Lago,Marbella,Andalucía,mediterránea,4,1,NULL
+AB001CT,ABaC,Barcelona,Cataluña,alta cocina,5,3,NULL
+CD002CT,Cinc Sentits,Barcelona,Cataluña,creativa,5,1,NULL
+MN003CT,Disfrutar,Barcelona,Cataluña,vanguardia,5,3,NULL
+CA001VC,El Poblet,Valencia,Comunidad Valenciana,mediterránea,5,2,NULL
+RQ002VC,Quique Dacosta,Dénia,Comunidad Valenciana,alta cocina,5,3,NULL
+LR003VC,La Salita,Valencia,Comunidad Valenciana,creativa,4,1,NULL
+LH001GA,Lucía Freitas – A Tafona,Santiago de Compostela,Galicia,gallega,4,1,NULL
+CM002GA,Culler de Pau,O Grove,Galicia,alta cocina,5,2,NULL
+PA003GA,Pepe Vieira,Poio,Galicia,creativa,5,2,NULL
+CL001CL,El Ermitaño,Benavente,Castilla y León,castellana,4,1,NULL
+LV002CL,La Botica,Matapozuelos,Castilla y León,tradicional,4,1,NULL
+VC003CL,Villena,Segovia,Castilla y León,creativa,4,1,NULL
+TC001CN,El Rincón de Juan Carlos,Adeje,Canarias,alta cocina,5,2,NULL
+HP002CN,Haydée,La Orotava,Canarias,canaria,4,1,NULL
+MB003CN,M.B.,Guía de Isora,Canarias,internacional,5,2,NULL
+LC001CM,El Bohío,Illescas,Castilla-La Mancha,manchega,4,1,NULL
+AM002CM,Ancestral,Illescas,Castilla-La Mancha,mercado,3,1,NULL
+AE003CM,Alma Mater,Cuenca,Castilla-La Mancha,moderna,4,1,NULL
+EO001AR,Lillas Pastia,Huesca,Aragón,aragonesa,4,1,NULL
+TR002AR,Tatau,Huesca,Aragón,creativa,4,1,NULL
+QB003AR,Quema,Zaragoza,Aragón,moderna,4,0,NULL
+MS001AS,Casa Marcial,Parres,Asturias,asturiana,5,2,NULL
+GL002AS,Gloria Gijón,Gijón,Asturias,asturiana,3,0,Casa Marcial
+RA003AS,Regueiro,Tox,Asturias,tradicional,4,0,NULL
+JR001CB,El Serbal,Santander,Cantabria,cántabra,4,1,NULL
+AS002CB,Annua,San Vicente de la Barquera,Cantabria,alta cocina,5,2,NULL
+BL003CB,Bodega El Riojano,Santander,Cantabria,tradicional,3,0,NULL
+AS001NA,El Molino de Urdániz,Urdániz,Navarra,navarra,5,2,NULL
+BR002NA,Baserriberri,Pamplona,Navarra,creativa,4,0,NULL
+TM003NA,Túbal,Tafalla,Navarra,tradicional,4,0,NULL
+LR001RI,Ikaro,Logroño,La Rioja,vasca,4,1,NULL
+NM002RI,Nahikari,Logroño,La Rioja,moderna,3,0,NULL
+GN003RI,Gastrobar Sabores,Calahorra,La Rioja,mercado,3,0,NULL
+ER001MU,Odeon,Cartagena,Región de Murcia,mediterránea,3,0,NULL
+LM002MU,Local de Ensayo,Puente Tocinos,Región de Murcia,creativa,4,1,NULL
+MK003MU,Magoga,Cartagena,Región de Murcia,mediterránea,4,1,NULL
+PB001EX,Restaurante Atrio,Cáceres,Extremadura,alta cocina,5,3,NULL
+SB002EX,Versátil,Zarza de Granadilla,Extremadura,creativa,4,1,NULL
+TR003EX,Tempura,Badajoz,Extremadura,fusión,3,0,NULL
+VA001IB,Zaranda,Palma de Mallorca,Islas Baleares,alta cocina,5,2,NULL
+MM002IB,Macarena de Castro,Alcúdia,Islas Baleares,mediterránea,4,1,NULL
+JO003IB,Adrián Quetglas,Palma de Mallorca,Islas Baleares,contemporánea,4,1,NULL
+GK001MD,Goiko Grill Gran Vía,Madrid,Comunidad de Madrid,hamburguesas,3,0,Goiko
+VK002MD,VIPS Gran Vía,Madrid,Comunidad de Madrid,internacional,2,0,VIPS
+CM001MD,100 Montaditos Sol,Madrid,Comunidad de Madrid,tapas,1,0,100 Montaditos
+BK001CT,Burger King Diagonal,Barcelona,Cataluña,hamburguesas,1,0,Burger King
+TT001VC,La Tagliatella Colón,Valencia,Comunidad Valenciana,italiana,2,0,La Tagliatella
+TP001MD,Telepizza Gran Vía,Madrid,Comunidad de Madrid,pizza,1,0,Telepizza
+GN001AN,Ginos Córdoba,Andalucía,italiana,2,0,Ginos
+FM001AS,Foster’s Hollywood Gijón,Gijón,Asturias,americana,2,0,Foster’s Hollywood

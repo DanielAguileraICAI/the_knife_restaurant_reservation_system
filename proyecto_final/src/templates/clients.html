@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+
+{% block body_class %}page-clients{% endblock %}
+
+{% block content %}
+  <div class="mb-4">
+    <h2 class="h3" style="color: var(--primary); font-weight: 700;">Área Cliente</h2>
+    <p class="text-muted-custom">Consulta tu historial de reservas y facturas</p>
+  </div>
+
+  <!-- Client Search Form -->
+  <div class="card mb-4" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+    <div class="card-body">
+      <h5 class="card-title" style="color: var(--primary);">Acceder a Área Cliente</h5>
+      <form id="clientSearchForm" class="row g-3">
+        <div class="col-md-10">
+          <label for="clientId" class="form-label">ID Cliente</label>
+          <input type="text" class="form-control" id="clientId" placeholder="Ingresa tu ID de cliente (Ej: 99727933D)" required>
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+          <button type="submit" class="btn btn-primary w-100">Acceder</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Client Results -->
+  <div id="clientResults" style="display: none;">
+    <div class="card mb-4" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="card-title mb-0" style="color: var(--primary);">Información del Cliente</h5>
+          <div>
+            <button class="btn btn-sm btn-outline-primary me-2" onclick="abrirModalEditarCliente()">
+              <i class="fas fa-edit"></i> Editar Datos
+            </button>
+            <button class="btn btn-sm btn-outline-danger me-2" onclick="eliminarCliente()">
+              <i class="fas fa-trash"></i> Eliminar Cuenta
+            </button>
+            <button class="btn btn-sm btn-warning" onclick="cerrarSesion()">
+              <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+            </button>
+          </div>
+        </div>
+        <div id="clientInfo"></div>
+      </div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-4">
+        <div class="card text-center" style="background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white;">
+          <div class="card-body">
+            <h3 class="mb-0" id="totalReservas">0</h3>
+            <p class="mb-0 small">Reservas Realizadas</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="background: linear-gradient(135deg, #00D4FF, #0A7AFF); color: white;">
+          <div class="card-body">
+            <h3 class="mb-0" id="totalFacturas">0</h3>
+            <p class="mb-0 small">Facturas Generadas</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="background: linear-gradient(135deg, #667EEA, #764BA2); color: white;">
+          <div class="card-body">
+            <h3 class="mb-0" id="totalGastado">0€</h3>
+            <p class="mb-0 small">Total Gastado</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs for Reservas and Facturas -->
+    <ul class="nav nav-tabs mb-3" id="clientTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="reservas-tab" data-bs-toggle="tab" data-bs-target="#reservas-panel" type="button">
+          Mis Reservas
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="facturas-tab" data-bs-toggle="tab" data-bs-target="#facturas-panel" type="button">
+          Mis Facturas
+        </button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="clientTabsContent">
+      <!-- Reservas Tab -->
+      <div class="tab-pane fade show active" id="reservas-panel">
+        <div id="clientReservas" class="row row-cols-1 row-cols-md-2 g-4">
+          <!-- reservas loaded by JS -->
+        </div>
+      </div>
+
+      <!-- Facturas Tab -->
+      <div class="tab-pane fade" id="facturas-panel">
+        <div id="clientFacturas">
+          <!-- facturas loaded by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- No Results Message -->
+  <div id="noResults" style="display: none;">
+    <div class="alert alert-info" style="background: var(--glass-bg);">
+      No se encontró ningún cliente con ese nombre o ID.
+    </div>
+  </div>
+
+  <!-- Modal para Editar Reserva -->
+  <div class="modal fade" id="editReservaModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+        <div class="modal-header" style="border-bottom: 1px solid var(--glass-border);">
+          <h5 class="modal-title" style="color: var(--primary);">Modificar Reserva</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="editReservaForm">
+            <input type="hidden" id="editReservaId">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Restaurante</label>
+              <p id="editRestaurante" class="text-muted-custom mb-0"></p>
+            </div>
+            <div class="mb-3">
+              <label for="editFecha" class="form-label fw-bold">Fecha</label>
+              <input type="date" class="form-control" id="editFecha" required>
+            </div>
+            <div class="mb-3">
+              <label for="editHora" class="form-label fw-bold">Hora</label>
+              <input type="time" class="form-control" id="editHora" required>
+            </div>
+            <div class="mb-3">
+              <label for="editPersonas" class="form-label fw-bold">Número de Personas</label>
+              <input type="number" class="form-control" id="editPersonas" min="1" max="20" required>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+              <button type="button" class="btn btn-danger" onclick="cancelarReserva()">Cancelar Reserva</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para Editar Cliente -->
+  <div class="modal fade" id="editClienteModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+        <div class="modal-header" style="border-bottom: 1px solid var(--glass-border);">
+          <h5 class="modal-title" style="color: var(--primary);">Editar Datos del Cliente</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="editClienteForm">
+            <input type="hidden" id="editClienteId">
+            <div class="mb-3">
+              <label for="editClienteNombre" class="form-label fw-bold">Nombre Completo</label>
+              <input type="text" class="form-control" id="editClienteNombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="editClienteEmail" class="form-label fw-bold">Email</label>
+              <input type="email" class="form-control" id="editClienteEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="editClienteTelefono" class="form-label fw-bold">Teléfono</label>
+              <input type="tel" class="form-control" id="editClienteTelefono" required>
+            </div>
+            <div class="mb-3">
+              <label for="editClienteEdad" class="form-label fw-bold">Edad</label>
+              <input type="number" class="form-control" id="editClienteEdad" min="18" max="120" required>
+            </div>
+            <div class="mb-3">
+              <label for="editClienteEstudios" class="form-label fw-bold">Nivel de Estudios</label>
+              <select class="form-select" id="editClienteEstudios" required>
+                <option value="">Selecciona...</option>
+                <option value="PRIMARIA">Primaria</option>
+                <option value="SECUNDARIA">Secundaria</option>
+                <option value="BACHILLERATO">Bachillerato</option>
+                <option value="UNIVERSITARIO">Universitario</option>
+                <option value="POSTGRADO">Postgrado</option>
+              </select>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para Valorar Restaurante -->
+  <div class="modal fade" id="valorarModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border);">
+        <div class="modal-header" style="border-bottom: 1px solid var(--glass-border);">
+          <h5 class="modal-title" style="color: var(--primary);">Valorar Restaurante</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="valorarForm">
+            <input type="hidden" id="valorarReservaId">
+            <input type="hidden" id="valorarRestauranteId">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Restaurante</label>
+              <p id="valorarRestaurante" class="text-muted-custom mb-0"></p>
+            </div>
+            <div class="mb-3">
+              <label for="valoracion" class="form-label fw-bold">Valoración (estrellas)</label>
+              <div class="d-flex gap-2 justify-content-center mb-2" id="starRating">
+                <span class="star" data-value="1" onclick="setRating(1)" style="font-size: 3rem; cursor: pointer; color: #FFD700; text-shadow: 0 0 3px rgba(0,0,0,0.3);">☆</span>
+                <span class="star" data-value="2" onclick="setRating(2)" style="font-size: 3rem; cursor: pointer; color: #FFD700; text-shadow: 0 0 3px rgba(0,0,0,0.3);">☆</span>
+                <span class="star" data-value="3" onclick="setRating(3)" style="font-size: 3rem; cursor: pointer; color: #FFD700; text-shadow: 0 0 3px rgba(0,0,0,0.3);">☆</span>
+                <span class="star" data-value="4" onclick="setRating(4)" style="font-size: 3rem; cursor: pointer; color: #FFD700; text-shadow: 0 0 3px rgba(0,0,0,0.3);">☆</span>
+                <span class="star" data-value="5" onclick="setRating(5)" style="font-size: 3rem; cursor: pointer; color: #FFD700; text-shadow: 0 0 3px rgba(0,0,0,0.3);">☆</span>
+              </div>
+              <input type="hidden" id="valoracion" required>
+            </div>
+            <div class="mb-3">
+              <label for="tipoVisita" class="form-label fw-bold">Tipo de Visita</label>
+              <select class="form-select" id="tipoVisita" required>
+                <option value="PAREJA">Pareja</option>
+                <option value="FAMILIA">Familia</option>
+                <option value="GRUPO">Grupo</option>
+                <option value="EMPRESA">Empresa</option>
+                <option value="SOLO">Solo</option>
+              </select>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-warning">Enviar Valoración</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

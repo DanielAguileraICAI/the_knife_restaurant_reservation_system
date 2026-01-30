@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+
+{% block body_class %}page-book{% endblock %}
+
+{% block content %}
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8">
+      <div style="background: var(--glass-bg); backdrop-filter: blur(20px); border-radius: 20px; padding: 3rem; border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow);">
+        <div class="text-center mb-4">
+          <h2 class="h3" style="color: var(--primary); font-weight: 700;">Hacer una Reserva</h2>
+          <p class="text-muted-custom">Primero valida tu identidad o regístrate</p>
+        </div>
+
+        <!-- Step Indicator -->
+        <div class="mb-4">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="step-item active" id="step1-indicator">
+              <div class="step-number">1</div>
+              <div class="step-label">Cliente</div>
+            </div>
+            <div class="step-line"></div>
+            <div class="step-item" id="step2-indicator">
+              <div class="step-number">2</div>
+              <div class="step-label">Reserva</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 1: Validate or Register Client -->
+        <div id="step1" class="step-content">
+          <h5 class="mb-3" style="color: var(--primary);">Introduce tus Datos</h5>
+          <form id="validateClientForm">
+            <div class="mb-3">
+              <label for="clientId" class="form-label fw-bold">ID Cliente (DNI/NIE)</label>
+              <input type="text" class="form-control" id="clientId" placeholder="Ej: 99727933D" required>
+              <small class="text-muted-custom">Introduce tu DNI/NIE para continuar</small>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Continuar</button>
+          </form>
+
+          <div class="text-center my-3">
+            <span class="text-muted-custom">¿Primera vez?</span>
+          </div>
+
+          <button class="btn btn-outline-primary w-100" onclick="showRegisterForm()">
+            Crear Nueva Cuenta
+          </button>
+
+          <!-- Register Form (Hidden by default) -->
+          <div id="registerForm" style="display: none;" class="mt-4">
+            <h5 class="mb-3" style="color: var(--primary);">Completa tus Datos</h5>
+            <form id="clientRegisterForm">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="regClientId" class="form-label">ID Cliente (DNI)</label>
+                  <input type="text" class="form-control" id="regClientId" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="regNombre" class="form-label">Nombre Completo</label>
+                  <input type="text" class="form-control" id="regNombre" placeholder="APELLIDO, Nombre" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="regTelefono" class="form-label">Teléfono</label>
+                  <input type="tel" class="form-control" id="regTelefono" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="regEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="regEmail">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <label for="regEdad" class="form-label">Edad</label>
+                  <input type="number" class="form-control" id="regEdad" min="18" max="120" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="regSexo" class="form-label">Sexo</label>
+                  <select class="form-select" id="regSexo" required>
+                    <option value="">Seleccionar</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                    <option value="O">Otro</option>
+                  </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="regEstudios" class="form-label">Estudios</label>
+                  <select class="form-select" id="regEstudios" required>
+                    <option value="">Seleccionar</option>
+                    <option value="ESTUDIANTE">Estudiante</option>
+                    <option value="TRABAJADOR">Trabajador</option>
+                    <option value="JUBILADO">Jubilado</option>
+                    <option value="NC">No consta</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Registrar y Continuar</button>
+              <button type="button" class="btn btn-secondary w-100 mt-2" onclick="hideRegisterForm()">Cancelar</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- STEP 2: Make Reservation (Hidden by default) -->
+        <div id="step2" class="step-content" style="display: none;">
+          <div class="alert alert-success mb-3" id="clientInfo"></div>
+          
+          <h5 class="mb-3" style="color: var(--primary);">Detalles de la Reserva</h5>
+          <form id="bookingForm">
+            <div class="mb-3">
+              <label for="restaurante" class="form-label fw-bold">Restaurante</label>
+              <select class="form-select" id="restaurante" required>
+                <option value="">Cargando restaurantes...</option>
+              </select>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="fecha" class="form-label fw-bold">Fecha</label>
+                <input type="date" class="form-control" id="fecha" required>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label for="hora" class="form-label fw-bold">Hora</label>
+                <input type="time" class="form-control" id="hora" required>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label for="personas" class="form-label fw-bold">Número de Personas</label>
+              <input type="number" class="form-control" id="personas" min="1" max="20" value="2" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 py-3">
+              <strong>Confirmar Reserva</strong>
+            </button>
+            <button type="button" class="btn btn-secondary w-100 mt-2" onclick="backToStep1()">
+              Volver
+            </button>
+          </form>
+        </div>
+
+        <div class="text-center mt-3">
+          <a href="/restaurants" class="text-decoration-none" style="color: var(--primary);">← Volver a restaurantes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .step-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--glass-bg);
+      border: 2px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+    .step-item.active .step-number {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: white;
+    }
+    .step-label {
+      font-size: 0.875rem;
+      color: #666;
+    }
+    .step-item.active .step-label {
+      color: var(--primary);
+      font-weight: 600;
+    }
+    .step-line {
+      flex: 1;
+      height: 2px;
+      background: #ccc;
+      margin: 0 1rem;
+      margin-bottom: 2rem;
+    }
+  </style>
+
+{% endblock %}

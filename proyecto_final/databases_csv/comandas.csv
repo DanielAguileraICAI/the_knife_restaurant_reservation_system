@@ -1,0 +1,879 @@
+ID_FACTURA,N_PLATO,NUM_PEDIDOS
+C2240421,Jamón Ibérico,2
+C2240421,Pulpo braseado,1
+C2240421,Tarta queso,2
+P0090515,Entrante manchego,1
+P0090515,Carne de la mancha,2
+P0090515,Postre tradicional,1
+J1011121,Entrante navarro,3
+J1011121,Txuletón,2
+J1011121,Tarta casera,1
+T1110316,Ensalada de naranja,1
+T1110316,Solomillo ibérico,2
+T1110316,Copa de vino,2
+N6190521,Jamón Ibérico,1
+N6190521,Taco aragonés,2
+N6190521,Trucha a la navarra,2
+N6190521,Bizcocho,1
+T3181222,Jamón Ibérico,1
+T3181222,Tartar atún,2
+T3181222,Arroz trufa,1
+S9230817,Jamón Ibérico,2
+S9230817,Croqueta jamón,3
+S9230817,Merluza Cantábrico,2
+P7251219,Ensalada templada,2
+P7251219,Merluza al horno,1
+L4250324,Jamón Ibérico,1
+L4250324,Arroz marinero,2
+L4250324,Lubina playa,2
+L4250324,Postre ibicenco,1
+B1200916,Jamón Ibérico,1
+B1200916,Arroz de marisco,3
+B1200916,Helado marino,2
+D2050415,Ensalada de mar,2
+D2050415,Bocadillo gourmet,1
+D2050415,Asado tradicional,3
+C4020315,Entrante casa,1
+C4020315,Bacalao dorado,2
+M9100622,Ensalada rústica,1
+M9100622,Tosta de anchoa,2
+M9100622,Jarrete horno,2
+M9100622,Tarta manzana,1
+M9090917,Entrante contemporáneo,2
+M9090917,Ravioli mar,1
+M9090917,Solomillo,2
+Z4270815,Ensalada de autor,1
+Z4270815,Arroz negro,2
+Z4270815,Mousse chocolate,2
+R6140121,Ensalada rústica,2
+R6140121,Jarrete horno,1
+R6140121,Copa vino,3
+L9220216,Jamón Ibérico,1
+L9220216,Rollo de txangurro,2
+L9220216,Lubina al horno,1
+S9210720,Ensalada de naranja,2
+S9210720,Bacalao confitado,1
+S9210720,Copa de vino,2
+T0111115,Ensalada de mercado,1
+T0111115,Arroz meloso,2
+T0111115,Tarta queso,1
+O7211018,Ensalada creativa,2
+O7211018,Secreto ibérico,3
+O7211018,Postre del chef,1
+V5180825,Jamón Ibérico,1
+V5180825,Tartar atún,1
+V5180825,Helado queso,2
+K5090324,Entrante de la casa,2
+K5090324,Solomillo manchego,2
+K5090324,Helado artesano,1
+D0230217,Jamón Ibérico,1
+D0230217,Tosta anchoa,2
+D0230217,Rabo toro,1
+T5280316,Entrante casa,2
+T5280316,Merluza plancha,2
+T5280316,Solomillo salsa,1
+T5280316,Helado artesano,2
+O8301121,Ensalada creativa,1
+O8301121,Plato fusión,2
+O8301121,Cerveza,3
+G8141024,Entrante navarro,2
+G8141024,Txuletón,3
+G8141024,Vino navarro,1
+Q8260923,Ensalada catalana,1
+Q8260923,Ravioli setas,2
+Q8260923,Crema catalana,2
+S3040325,Whopper,3
+S3040325,Onion rings,2
+S3040325,Nuggets,1
+S3040325,Refresco,3
+Y6300317,Ensalada templada,1
+Y6300317,Magret pato,2
+Y6300317,Cheesecake,1
+A7310324,Jamón Ibérico,2
+A7310324,Tosta de foie,1
+A7310324,Arroz caldoso,2
+Y6091023,Ensalada verde,1
+Y6091023,Pulpo a la gallega,2
+Y6091023,Tarta de limón,1
+Z5091022,Tagliatella carbonara,2
+Z5091022,Lasaña,1
+Z5091022,Tiramisú,2
+I3180722,Jamón Ibérico,1
+I3180722,Alcachofa confitada,2
+I3180722,Merluza a la navarra,2
+X2261217,Jamón Ibérico,1
+X2261217,Taco aragonés,1
+X2261217,Copa vino,3
+B8140224,Jamón Ibérico,2
+B8140224,Tartar atún,1
+B8140224,Sorbete mar,2
+I2281119,Entrante fusión,2
+I2281119,Plato principal,1
+I2281119,Postre casero,1
+C0201222,Ensalada de mar,2
+C0201222,Asado tradicional,3
+C0201222,Postre casero,1
+M6300523,Ensalada templada,1
+M6300523,Merluza al horno,2
+M6300523,Magret pato,1
+M6300523,Cheesecake,2
+K0200621,Jamón Ibérico,2
+K0200621,Txangurro gratinado,1
+K0200621,Merluza Arzak,2
+K0200621,Bizcocho mantequilla,1
+U1020320,Entrante casa,1
+U1020320,Bacalao dorado,2
+U1020320,Postre casero,1
+Y2260717,Jamón Ibérico,1
+Y2260717,Sopa de mariscos,2
+Y2260717,Solomillo ternera,2
+K9130318,Entrante casa,2
+K9130318,Bacalao dorado,1
+K9130318,Refresco,3
+J0210317,Jamón Ibérico,1
+J0210317,Tartar atún,2
+J0210317,Helado queso,1
+J2230524,Ensalada riojana,2
+J2230524,Bacalao al ajoarriero,2
+J2230524,Copa rioja,2
+S1280119,Taco creativo,1
+S1280119,Ceviche corvina,2
+S1280119,Degustación principal,1
+S1280119,Coulant chocolate,2
+M5300615,Entrante casa,2
+M5300615,Merluza plancha,1
+M5300615,Cerveza local,3
+S5280323,Ensalada rústica,1
+S5280323,Tosta de anchoa,2
+S5280323,Copa vino,2
+P2050222,Ensalada catalana,2
+P2050222,Jarrete confitado,3
+P2050222,Crema catalana,1
+Z0190216,Tosta creativa,2
+Z0190216,Chuleta a la brasa,1
+Z0190216,Postre lacteo,2
+K4220423,Ensalada catalana,1
+K4220423,Ravioli setas,2
+K4220423,Vino por copa,2
+P1231116,Jamón Ibérico,1
+P1231116,Arroz marinero,2
+P1231116,Vino mallorca,1
+P6050918,Jamón Ibérico,2
+P6050918,Chuleta vaca,2
+P6050918,Vino de la casa,1
+K5101123,Ensalada canaria,1
+K5101123,Bacalao al mojo,2
+K5101123,Dulce de leche,2
+S1260425,Jamón Ibérico,1
+S1260425,Sopa de mariscos,2
+S1260425,Helado vainilla,1
+L0061124,Ensalada catalana,2
+L0061124,Ravioli setas,1
+L0061124,Jarrete confitado,2
+K8050722,Tosta creativa,1
+K8050722,Chuleta a la brasa,2
+K8050722,Postre lacteo,1
+H8091220,Entrante creativa,2
+H8091220,Arroz verduras,1
+H8091220,Secreto ibérico,2
+D5280324,Whopper,2
+D5280324,Nuggets,3
+D5280324,Postre helado,2
+H5201215,Ginos pizza quattro,2
+H5201215,Ensalada caprese,1
+H5201215,Tiramisu,2
+J9220825,Entrante navarro,1
+J9220825,Txuletón,3
+J9220825,Tarta casera,2
+O3120822,Annua tasting,2
+O3120822,Arroz caldoso,1
+O3120822,Postre creativo,2
+J8260622,Ensalada rústica,1
+J8260622,Jarrete horno,2
+J8260622,Tarta manzana,1
+V4140320,Entrante temporada,2
+V4140320,Pescado del dia,2
+V4140320,Guiso local,1
+J9060320,Ensalada de temporada,1
+J9060320,Tartar de atún,2
+J9060320,Tarta de queso,1
+G9090919,Entrante navarro,2
+G9090919,Vino navarro,3
+Z9060522,Entrante de la casa,1
+Z9060522,Solomillo manchego,2
+Z9060522,Pasta fresca,1
+Z9060522,Helado artesano,2
+H6121016,Jamón Ibérico,1
+H6121016,Croqueta jamón,2
+H6121016,Merluza Cantábrico,2
+T9310818,Jamón Ibérico,1
+T9310818,Tartar atún,2
+T9310818,Chuleta vaca,1
+Z1030217,Annua tasting,2
+Z1030217,Lubina plancha,1
+Z1030217,Postre creativo,2
+D9080122,Jamón Ibérico,1
+D9080122,Arroz marinero,2
+D9080122,Postre ibicenco,1
+W9120218,Jamón Ibérico,2
+W9120218,Tartar atún,1
+W9120218,Sorbete mar,1
+A6110823,Ensalada templada,1
+A6110823,Merluza al horno,2
+A6110823,Magret pato,2
+A6110823,Cheesecake,1
+L3131221,Jamón Ibérico,2
+L3131221,Arroz caldoso,1
+L3131221,Panna cotta,2
+Q6100219,Jamón Ibérico,1
+Q6100219,Rollo de txangurro,3
+Q6100219,Lubina al horno,2
+Q6100219,Helado de leche,1
+C5061216,Jamón Ibérico,2
+C5061216,Arròs melòs,2
+C5061216,Bacalao al pilpil,1
+E4091025,Jamón Ibérico,1
+E4091025,Croqueta jamón,2
+E4091025,Cerveza local,1
+V1210317,Entrante creativa,2
+V1210317,Secreto ibérico,2
+V1210317,Postre del día,1
+Q2310823,Jamón Ibérico,1
+Q2310823,Percebes plancha,2
+Q2310823,Pulpo a la gallega,1
+M6181218,Ensalada catalana,2
+M6181218,Ravioli setas,1
+M6181218,Crema catalana,2
+C4270122,Taco creativo,1
+C4270122,Degustación principal,2
+C4270122,Coulant chocolate,1
+P1300118,Ensalada creativa,1
+P1300118,Plato fusión,2
+P1300118,Cerveza,2
+O6220820,Jamón Ibérico,2
+O6220820,Tosta anchoa,1
+O6220820,Rabo toro,2
+E6211223,Entrante casa,1
+E6211223,Merluza plancha,2
+E6211223,Solomillo salsa,2
+U7250320,Entrante contemporáneo,1
+U7250320,Ravioli mar,2
+U7250320,Cheesecake,1
+U2160321,Entrante casa,2
+U2160321,Bacalao dorado,1
+U2160321,Postre casero,2
+T8261024,Entrante autor,1
+T8261024,Principal degustación,2
+T8261024,Postre creat,1
+Y8170524,Taco creativo,2
+Y8170524,Ceviche corvina,1
+Y8170524,Degustación principal,1
+P2020115,Ensalada de autor,2
+P2020115,Arroz negro,1
+P2020115,Carrillera ibérica,2
+Z3051223,Entrante creativa,1
+Z3051223,Arroz verduras,2
+Z3051223,Secreto ibérico,2
+U4120816,Ensalada de autor,2
+U4120816,Carrillera ibérica,1
+U4120816,Mousse chocolate,2
+W9061123,Jamón Ibérico,1
+W9061123,Txangurro gratinado,2
+W9061123,Cava de la casa,3
+B5241019,Jamón Ibérico,2
+B5241019,Arroz de marisco,1
+B5241019,Mejillones escabeche,2
+H0230520,Jamón Ibérico,1
+H0230520,Percebes plancha,2
+H0230520,Copa Albariño,2
+R7300721,Jamón Ibérico,1
+R7300721,Taco aragonés,2
+R7300721,Trucha a la navarra,1
+R7300721,Copa vino,2
+L5071220,Ensalada creativa,2
+L5071220,Secreto ibérico,1
+L5071220,Postre del chef,2
+N1070923,Entrante fusión,1
+N1070923,Plato principal,2
+N1070923,Postre casero,1
+Y9261122,Jamón Ibérico,2
+Y9261122,Taco aragonés,1
+Y9261122,Copa vino,2
+Z6020625,Ensalada fresca,1
+Z6020625,Merluza al vapor,2
+Z6020625,Vino por copa,2
+X6290915,Entrante creativa,2
+X6290915,Secreto ibérico,1
+X6290915,Cerveza,2
+O3271219,Jamón Ibérico,1
+O3271219,Tosta anchoa,2
+O3271219,Crema catalana,1
+O7270820,Jamón Ibérico,2
+O7270820,Oreja glaseada,1
+O7270820,Sorbete de limón,2
+E4010617,Whopper,2
+E4010617,Onion rings,3
+E4010617,Postre helado,1
+R1080219,Ginos pizza quattro,2
+R1080219,Spaghetti al pesto,1
+R1080219,Copa de vino,2
+G7261118,Ensalada riojana,1
+G7261118,Bacalao al ajoarriero,2
+G7261118,Milhojas,2
+H5100619,Jamón Ibérico,1
+H5100619,Ensalada muleña,2
+H5100619,Caldero murciano,2
+Q0181017,Entrante fusión,1
+Q0181017,Plato principal,2
+Q0181017,Bebida refresco,3
+H2240723,Ensalada de temporada,2
+H2240723,Entrecot a la parrilla,2
+H2240723,Copa de vino,1
+B5040425,Jamón Ibérico,1
+B5040425,Arroz trufa,2
+B5040425,Helado queso,1
+S1270321,Ensalada riojana,2
+S1270321,Milhojas,1
+S1270321,Copa rioja,2
+H4130322,Entrante casa,1
+H4130322,Merluza plancha,2
+H4130322,Helado artesano,2
+L5180325,Costillas amer.,2
+L5180325,Hamburguesa clásica,1
+L5180325,Postre brownie,2
+C8181221,Jamón Ibérico,1
+C8181221,Pulpo braseado,2
+C8181221,Lubina salvaje,1
+C8181221,Copa Albariño,2
+P4260722,Costillas amer.,1
+P4260722,Nachos,3
+P4260722,Cerveza,2
+I7210823,Jamón Ibérico,2
+I7210823,Croqueta jamón,1
+I7210823,Arroz con leche,2
+F3231115,Ensalada templada,1
+F3231115,Merluza al horno,2
+F3231115,Magret pato,2
+B4050121,Whopper,3
+B4050121,Nuggets,2
+B4050121,Refresco,3
+P4070922,Montadito jamón,3
+P4070922,Montadito queso,2
+P4070922,Cerveza,2
+F2110316,Ginos pizza quattro,1
+F2110316,Ensalada caprese,2
+F2110316,Spaghetti al pesto,2
+C0251122,Entrante mallorquín,1
+C0251122,Caldereta pescado,2
+C0251122,Helado local,2
+X4020723,Montadito chistorra,2
+X4020723,Rueda 5 montaditos,1
+X4020723,Cerveza,3
+Q7220619,Jamón Ibérico,1
+Q7220619,Rollo de txangurro,2
+Q7220619,Arroz de plancton,1
+N5200517,Entrante navarro,2
+N5200517,Txuletón,3
+N5200517,Vino navarro,2
+L9210817,Ensalada canaria,1
+L9210817,Pescado del día,2
+L9210817,Cerveza artesana,2
+H8080824,Jamón Ibérico,2
+H8080824,Arròs melòs,1
+H8080824,Tarta tatin,2
+L3100617,Entrante creativa,1
+L3100617,Arroz verduras,2
+L3100617,Secreto ibérico,3
+I4130124,Entrante manchego,2
+I4130124,Guiso tradicional,1
+I4130124,Copa de vino,2
+A3190819,Entrante temporada,1
+A3190819,Pescado del dia,2
+A3190819,Tarta manzana,2
+Q3030521,Arroz caldero,2
+Q3030521,Entrante mar,1
+Q3030521,Postre chocolate,2
+Z3200716,VIPS ensalada,1
+Z3200716,VIPS burger,2
+Z3200716,Tarta queso,1
+B5101215,Ensalada templada,2
+B5101215,Merluza al horno,1
+B5101215,Cheesecake,2
+G5210416,Jamón Ibérico,1
+G5210416,Lubina al horno,2
+G5210416,Helado de leche,1
+R3310525,Jamón Ibérico,2
+R3310525,Tosta de foie,1
+R3310525,Arroz caldoso,2
+S2270624,Ensalada rústica,1
+S2270624,Jarrete horno,2
+S2270624,Tarta manzana,1
+I9260523,Ensalada catalana,1
+I9260523,Ravioli setas,2
+I9260523,Jarrete confitado,2
+J5180221,Ensalada de temporada,2
+J5180221,Tartar de atún,1
+J5180221,Copa de vino,2
+G0020223,Jamón Ibérico,1
+G0020223,Tartar atún,2
+G0020223,Chuleta vaca,1
+L8160922,Tagliatella carbonara,2
+L8160922,Bruschetta,1
+L8160922,Tiramisú,2
+I8291216,Jamón Ibérico,1
+I8291216,Ravioli mar,2
+I8291216,Copa vino,1
+J6270218,Jamón Ibérico,2
+J6270218,Ravioli mar,1
+J6270218,Lomo vaca,2
+P7040523,Ensalada fresca,1
+P7040523,Solomillo ibérico,2
+P7040523,Flan casero,1
+Z2100123,Ensalada canaria,1
+Z2100123,Bacalao al mojo,2
+Z2100123,Pescado del día,2
+X2260223,Jamón Ibérico,2
+X2260223,Txangurro gratinado,1
+X2260223,Merluza Arzak,2
+N4060423,Jamón Ibérico,1
+N4060423,Tosta de foie,2
+N4060423,Panna cotta,2
+Y3290216,Jamón Ibérico,2
+Y3290216,Croqueta jamón,1
+Y3290216,Merluza Cantábrico,2
+I3230824,Ensalada de autor,1
+I3230824,Arroz negro,2
+I3230824,Infusión,2
+Q7160215,Jamón Ibérico,1
+Q7160215,Croqueta jamón,3
+Q7160215,Arroz con leche,2
+M8290917,Ensalada canaria,2
+M8290917,Pescado del día,1
+M8290917,Dulce de leche,2
+L9280321,Entrante de la casa,1
+L9280321,Pasta fresca,2
+L9280321,Helado artesano,1
+X9190717,Ensalada de mercado,2
+X9190717,Bacalao confitado,1
+X9190717,Cerveza,2
+Z9020123,Tagliatella carbonara,1
+Z9020123,Lasaña,2
+Z9020123,Tiramisú,2
+L2120324,Jamón Ibérico,2
+L2120324,Croqueta jamón,1
+L2120324,Merluza Cantábrico,2
+W6130925,Entrante casa,1
+W6130925,Solomillo salsa,2
+W6130925,Cerveza local,2
+F5130216,Costillas amer.,2
+F5130216,Hamburguesa clásica,1
+F5130216,Postre brownie,2
+I0260623,Jamón Ibérico,1
+I0260623,Calamares fritos,2
+I0260623,Lechazo asado,2
+K9210322,Ensalada de mar,2
+K9210322,Bocadillo gourmet,1
+K9210322,Copa vino,2
+R7231124,Annua tasting,1
+R7231124,Arroz caldoso,2
+R7231124,Postre creativo,1
+N4101121,Tagliatella carbonara,2
+N4101121,Bruschetta,1
+N4101121,Vino italiano,2
+Y3250522,VIPS ensalada,1
+Y3250522,VIPS burger,2
+Y3250522,Café,2
+G7290323,Jamón Ibérico,1
+G7290323,Lubina playa,2
+G7290323,Postre ibicenco,1
+M6191122,Jamón Ibérico,2
+M6191122,Pulpo braseado,1
+M6191122,Tarta queso,2
+O5020216,Taco creativo,1
+O5020216,Ceviche corvina,2
+O5020216,Cóctel firma,3
+W5070620,Jamón Ibérico,2
+W5070620,Tartar atún,1
+W5070620,Sorbete mar,2
+N8280216,Jamón Ibérico,1
+N8280216,Taco aragonés,2
+N8280216,Bizcocho,1
+Z9060723,Jamón Ibérico,1
+Z9060723,Tartar atún,2
+Z9060723,Copa vino,2
+R4020221,Costillas amer.,2
+R4020221,Nachos,1
+R4020221,Cerveza,3
+N9290415,Jamón Ibérico,1
+N9290415,Sopa de mariscos,2
+N9290415,Café expreso,2
+S9160622,Entrante fusión,1
+S9160622,Plato principal,2
+S9160622,Postre casero,1
+U6010921,Ensalada catalana,2
+U6010921,Ravioli setas,1
+U6010921,Jarrete confitado,3
+G6050517,Entrante autor,1
+G6050517,Plato pescado,2
+G6050517,Postre creat,1
+C2121123,Jamón Ibérico,2
+C2121123,Alcachofa confitada,1
+C2121123,Flan artesano,2
+L6050324,Entrante contemporáneo,1
+L6050324,Ravioli mar,2
+L6050324,Copa vino,2
+X7110915,Ensalada de mercado,1
+X7110915,Arroz meloso,2
+X7110915,Tarta queso,2
+X6080918,Jamón Ibérico,2
+X6080918,Arroz caldoso,1
+X6080918,Panna cotta,2
+F3130721,Ensalada fresca,1
+F3130721,Merluza al vapor,2
+F3130721,Flan casero,1
+X7240822,Entrante mercado,2
+X7240822,Arroz verduras,1
+X7240822,Copa vino,2
+O7140920,Entrante mallorquín,1
+O7140920,Lechona asada,2
+O7140920,Bebida,3
+Y7250520,Jamón Ibérico,2
+Y7250520,Percebes plancha,1
+Y7250520,Copa Albariño,2
+U9130222,Jamón Ibérico,1
+U9130222,Ravioli mar,2
+U9130222,Crema queso,1
+Z8061224,Ensalada templada,2
+Z8061224,Merluza al horno,1
+Z8061224,Cheesecake,2
+B1260618,Jamón Ibérico,1
+B1260618,Tartar atún,2
+B1260618,Chuleta vaca,2
+S0050216,Jamón Ibérico,2
+S0050216,Oreja glaseada,1
+S0050216,Café de origen,2
+B2250722,Jamón Ibérico,1
+B2250722,Ravioli mar,2
+B2250722,Copa vino,1
+U1100915,Jamón Ibérico,2
+U1100915,Oreja glaseada,1
+U1100915,Merluza a la plancha,2
+Q8230824,Entrante casa,1
+Q8230824,Merluza plancha,2
+Q8230824,Cerveza local,2
+C1050723,Ensalada templada,1
+C1050723,Merluza al horno,2
+C1050723,Magret pato,2
+N3050118,Entrante manchego,2
+N3050118,Carne de la mancha,1
+N3050118,Copa de vino,2
+Z6020825,Hamburguesa Pigma,2
+Z6020825,Patatas rústicas,3
+Z6020825,Refresco,2
+A8290625,Entrante autor,1
+A8290625,Principal degustación,2
+A8290625,Bebida local,2
+W2101016,Entrante de la casa,2
+W2101016,Pasta fresca,1
+W2101016,Refresco,3
+I3290521,Entrante creativa,1
+I3290521,Arroz verduras,2
+I3290521,Secreto ibérico,2
+J0200920,Ensalada riojana,2
+J0200920,Bacalao al ajoarriero,1
+J0200920,Copa rioja,2
+L9110415,Jamón Ibérico,1
+L9110415,Rollo de txangurro,2
+L9110415,Lubina al horno,2
+L2280217,Montadito jamón,2
+L2280217,Montadito queso,3
+L2280217,Cerveza,2
+U2081121,Costillas amer.,2
+U2081121,Hamburguesa clásica,1
+U2081121,Cerveza,3
+B9300523,Jamón Ibérico,1
+B9300523,Sopa de mariscos,2
+B9300523,Solomillo ternera,2
+P7110922,Telepizza margarita,2
+P7110922,Alitas bbq,1
+P7110922,Bebida lata,3
+U2030318,Entrante de la casa,1
+U2030318,Solomillo manchego,2
+U2030318,Helado artesano,1
+C7210715,Entrante temporada,2
+C7210715,Pescado del dia,1
+C7210715,Cerveza,2
+D9061020,Ensalada riojana,1
+D9061020,Bacalao al ajoarriero,2
+D9061020,Milhojas,2
+U4060718,Ensalada de temporada,2
+U4060718,Tartar de atún,1
+U4060718,Copa de vino,2
+X8101217,Jamón Ibérico,1
+X8101217,Ensalada muleña,2
+X8101217,Caldero murciano,2
+A0240917,Jamón Ibérico,2
+A0240917,Oreja glaseada,1
+A0240917,Merluza a la plancha,1
+G3220218,Ensalada fresca,1
+G3220218,Merluza al vapor,2
+G3220218,Solomillo ibérico,2
+X5190115,Jamón Ibérico,1
+X5190115,Ravioli mar,2
+X5190115,Lomo vaca,1
+T5080817,Arroz caldero,2
+T5080817,Entrante mar,1
+T5080817,Vino local,2
+N3031021,Jamón Ibérico,1
+N3031021,Arroz de marisco,2
+N3031021,Helado marino,1
+L4130117,Ginos pizza quattro,2
+L4130117,Ensalada caprese,1
+L4130117,Copa de vino,2
+N3080519,Ensalada fresca,1
+N3080519,Solomillo ibérico,2
+N3080519,Vino por copa,2
+H0011222,Ensalada templada,1
+H0011222,Merluza al horno,2
+H0011222,Magret pato,2
+X4091118,Jamón Ibérico,2
+X4091118,Percebes plancha,1
+X4091118,Pulpo a la gallega,2
+V4040223,Taco creativo,1
+V4040223,Ceviche corvina,2
+V4040223,Degustación principal,1
+L2240116,Tagliatella carbonara,2
+L2240116,Lasaña,1
+L2240116,Tiramisú,1
+K9211115,Jamón Ibérico,1
+K9211115,Pulpo braseado,2
+K9211115,Lubina salvaje,2
+Z9250121,Ensalada fresca,1
+Z9250121,Merluza al vapor,2
+Z9250121,Vino por copa,2
+E9300421,Ensalada de mercado,2
+E9300421,Arroz meloso,1
+E9300421,Cerveza,2
+C2210823,Ensalada canaria,1
+C2210823,Bacalao al mojo,2
+C2210823,Cerveza artesana,2
+J7020618,Entrante gallego,2
+J7020618,Merluza en salsa,1
+J7020618,Vino Ribeiro,2
+Z5280221,Ensalada riojana,1
+Z5280221,Bacalao al ajoarriero,2
+Z5280221,Copa rioja,2
+W2100625,Entrante mercado,2
+W2100625,Arroz verduras,1
+W2100625,Copa vino,2
+H7190217,Jamón Ibérico,1
+H7190217,Ravioli mar,2
+H7190217,Crema queso,1
+M0120925,Montadito jamón,3
+M0120925,Montadito chistorra,2
+M0120925,Cerveza,3
+W4090625,Ensalada de autor,1
+W4090625,Arroz negro,2
+W4090625,Carrillera ibérica,2
+V9060125,Annua tasting,2
+V9060125,Arroz caldoso,1
+V9060125,Copa vino,2
+O1210524,Ensalada creativa,1
+O1210524,Secreto ibérico,3
+O1210524,Postre del chef,2
+W9011215,Ensalada de mar,2
+W9011215,Bocadillo gourmet,1
+W9011215,Postre casero,2
+G2060724,Entrante manchego,2
+G2060724,Guiso tradicional,1
+G2060724,Copa de vino,2
+D6180821,Jamón Ibérico,1
+D6180821,Arròs melòs,2
+D6180821,Copa de vino,2
+A1020918,Ensalada de naranja,2
+A1020918,Solomillo ibérico,1
+A1020918,Milhojas chocolate,2
+B5290922,Jamón Ibérico,1
+B5290922,Arroz de marisco,2
+B5290922,Mejillones escabeche,1
+M5030824,Entrante autor,2
+M5030824,Plato pescado,1
+M5030824,Bebida local,2
+V7160524,Telepizza margarita,1
+V7160524,Telepizza pepperoni,2
+V7160524,Postre helado,2
+U0281121,Costillas amer.,2
+U0281121,Nachos,1
+U0281121,Cerveza,3
+F6140625,Entrante autor,1
+F6140625,Principal degustación,2
+F6140625,Postre creat,1
+Z1121115,Entrante fusión,2
+Z1121115,Plato principal,1
+Z1121115,Bebida refresco,2
+S4160718,Jamón Ibérico,1
+S4160718,Tosta anchoa,2
+S4160718,Vino tinto,2
+S7090218,Jamón Ibérico,2
+S7090218,Tosta de foie,1
+S7090218,Arroz caldoso,2
+E6100617,Taco creativo,1
+E6100617,Ceviche corvina,2
+E6100617,Coulant chocolate,1
+X3090118,Ginos pizza quattro,2
+X3090118,Spaghetti al pesto,1
+X3090118,Tiramisu,2
+U3311022,Jamón Ibérico,1
+U3311022,Sopa de mariscos,2
+U3311022,Helado vainilla,1
+H4261115,Jamón Ibérico,2
+H4261115,Taco aragonés,1
+H4261115,Copa vino,2
+U9260320,Tagliatella carbonara,1
+U9260320,Bruschetta,2
+U9260320,Tiramisú,2
+W5040118,Jamón Ibérico,1
+W5040118,Taco aragonés,2
+W5040118,Trucha a la navarra,1
+W5090715,Jamón Ibérico,2
+W5090715,Txangurro gratinado,1
+W5090715,Bizcocho mantequilla,2
+O4170322,Jamón Ibérico,1
+O4170322,Arròs melòs,2
+O4170322,Bacalao al pilpil,2
+M3050723,Jamón Ibérico,1
+M3050723,Rollo de txangurro,3
+M3050723,Arroz de plancton,2
+V8100425,Ensalada catalana,2
+V8100425,Ravioli setas,1
+V8100425,Vino por copa,2
+F8290120,Entrante casa,1
+F8290120,Bacalao dorado,2
+F8290120,Refresco,2
+O1130924,Jamón Ibérico,1
+O1130924,Arroz marinero,2
+O1130924,Lubina playa,1
+Q4280116,Jamón Ibérico,2
+Q4280116,Ravioli mar,1
+Q4280116,Lomo vaca,2
+S5170422,Jamón Ibérico,1
+S5170422,Rollo de txangurro,2
+S5170422,Lubina al horno,2
+R0180821,Jamón Ibérico,2
+R0180821,Pulpo braseado,1
+R0180821,Tarta queso,2
+P4280821,Entrante casa,1
+P4280821,Bacalao dorado,2
+P4280821,Postre casero,1
+L0300615,Entrante mallorquín,2
+L0300615,Caldereta pescado,1
+L0300615,Helado local,2
+U0170623,Ensalada canaria,1
+U0170623,Bacalao al mojo,2
+U0170623,Pescado del día,2
+H5190219,Ensalada de mercado,1
+H5190219,Arroz meloso,2
+H5190219,Tarta queso,1
+L3150223,Jamón Ibérico,2
+L3150223,Arroz caldoso,1
+L3150223,Panna cotta,2
+I5101025,Entrante navarro,1
+I5101025,Txuletón,3
+I5101025,Tarta casera,2
+K5210216,Entrante contemporáneo,1
+K5210216,Ravioli mar,2
+K5210216,Solomillo,2
+A1030825,Jamón Ibérico,1
+A1030825,Sang amb ceba,2
+A1030825,Postre cítrico,1
+K1011120,Ensalada templada,2
+K1011120,Merluza al horno,1
+K1011120,Magret pato,2
+L1221023,Tagliatella carbonara,1
+L1221023,Lasaña,2
+L1221023,Vino italiano,2
+L2110424,Jamón Ibérico,2
+L2110424,Tosta anchoa,1
+L2110424,Rabo toro,2
+P6220821,Ensalada canaria,1
+P6220821,Bacalao al mojo,2
+P6220821,Dulce de leche,2
+V8140823,Jamón Ibérico,1
+V8140823,Ravioli mar,2
+V8140823,Copa vino,1
+Y9080225,Jamón Ibérico,2
+Y9080225,Arroz de marisco,1
+Y9080225,Helado marino,2
+Q0090917,Ensalada de autor,1
+Q0090917,Arroz negro,2
+Q0090917,Mousse chocolate,1
+T0271220,Jamón Ibérico,2
+T0271220,Tosta anchoa,1
+T0271220,Crema catalana,2
+A6280217,Entrante creativa,1
+A6280217,Secreto ibérico,2
+A6280217,Postre del día,1
+O3020616,Jamón Ibérico,1
+O3020616,Txangurro gratinado,2
+O3020616,Merluza Arzak,2
+G2130322,Tagliatella carbonara,2
+G2130322,Bruschetta,1
+G2130322,Tiramisú,2
+B8120123,Jamón Ibérico,2
+B8120123,Oreja glaseada,1
+B8120123,Merluza a la plancha,1
+I6220217,Ensalada de mercado,1
+I6220217,Bacalao confitado,2
+I6220217,Cerveza,2
+R5170324,Jamón Ibérico,2
+R5170324,Oreja glaseada,1
+R5170324,Sorbete de limón,2
+S7260221,Ensalada verde,1
+S7260221,Pulpo a la gallega,2
+S7260221,Cerveza premium,2
+Z6010217,Ensalada riojana,2
+Z6010217,Bacalao al ajoarriero,1
+Z6010217,Copa rioja,2
+Y6280717,Entrante autor,1
+Y6280717,Principal degustación,2
+Y6280717,Plato pescado,1
+R4070324,Telepizza margarita,2
+R4070324,Telepizza pepperoni,1
+R4070324,Bebida lata,3
+J9230424,VIPS ensalada,1
+J9230424,VIPS burger,2
+J9230424,Ensalada cesar,1
+P2150618,Jamón Ibérico,2
+P2150618,Txangurro gratinado,1
+P2150618,Cava de la casa,3
+K0010221,Jamón Ibérico,1
+K0010221,Arroz marinero,2
+K0010221,Postre ibicenco,2
+V8090224,Jamón Ibérico,1
+V8090224,Sopa de mariscos,2
+V8090224,Solomillo ternera,1
+K2301020,Jamón Ibérico,2
+K2301020,Txangurro gratinado,1
+K2301020,Merluza Arzak,2
+L0180821,Annua tasting,1
+L0180821,Arroz caldoso,2
+L0180821,Postre creativo,1
+M8180221,Entrante autor,2
+M8180221,Principal degustación,1
+M8180221,Bebida local,2
+T1180124,VIPS ensalada,1
+T1180124,VIPS burger,2
+T1180124,Tarta queso,2
+J5180216,Jamón Ibérico,2
+J5180216,Tartar atún,1
+J5180216,Sorbete mar,2
+P1021125,Ensalada riojana,1
+P1021125,Bacalao al ajoarriero,2
+P1021125,Milhojas,1
+I6031118,Ginos pizza quattro,2
+I6031118,Ensalada caprese,1
+I6031118,Copa de vino,2
+L7020815,Jamón Ibérico,1
+L7020815,Sang amb ceba,2
+L7020815,Arroz meloso,1
+G3200716,Plato tradicional,3

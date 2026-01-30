@@ -1,0 +1,23 @@
+Orden Alérgenos:
+1) huevos 
+2) pescado 
+3) altramuces (lupin) 
+4) leche
+5) mostaza
+6) cacahuetes
+7) sulfitos
+8) soja
+9) frutos secos (tree nuts)
+10) gluten
+11) apio
+12) sésamo
+13) crustáceos
+14) moluscos
+
+Los alérgenos funcionarán de la siguiente manera: será un código de 1 y 0 de 14 dígitos, y cada posición
+representará un alérgeno, siendo la primera para el huevo, la segunda para el pescado...
+
+Si el plato contiene un alergeno, el dígito en su posición se pondrá a 1, y, si no, a 0.
+
+Ejemplo: Croquetas de Jamón. Contienen Huevos, Leche, Frutos Secos y Gluten.
+Código de alérgeno -> 10010000110000

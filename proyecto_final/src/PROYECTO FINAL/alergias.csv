@@ -1,0 +1,251 @@
+N_PLATO,ID_RESTAURANTE,NUM_ALERGENO
+Jamón Ibérico,MB001PV,6
+Oreja glaseada,MB001PV,6
+Merluza a la plancha,MB001PV,2
+Rollo de txangurro,AZ002PV,6
+Rollo de txangurro,AZ002PV,13
+Lubina al horno,AZ002PV,2
+Arroz de plancton,AZ002PV,2
+Arroz de plancton,AZ002PV,14
+Helado de leche,AZ002PV,4
+Jamón Ibérico,AA003PV,6
+Txangurro gratinado,AA003PV,6
+Txangurro gratinado,AA003PV,13
+Merluza Arzak,AA003PV,2
+Bizcocho mantequilla,AA003PV,4
+Taco creativo,DR001MD,6
+Taco creativo,DR001MD,10
+Taco creativo,DR001MD,12
+Ceviche corvina,DR001MD,2
+Ceviche corvina,DR001MD,14
+Degustación principal,DR001MD,2
+Degustación principal,DR001MD,4
+Degustación principal,DR001MD,6
+Coulant chocolate,DR001MD,4
+Coulant chocolate,DR001MD,12
+Tartar de atún,SV002MD,2
+Entrecot a la parrilla,SV002MD,6
+Tarta de queso,SV002MD,4
+Jamón Ibérico,RE003MD,6
+Sopa de mariscos,RE003MD,2
+Sopa de mariscos,RE003MD,13
+Solomillo ternera,RE003MD,6
+Helado vainilla,RE003MD,4
+Jamón Ibérico,AP001AN,6
+Arroz de marisco,AP001AN,2
+Arroz de marisco,AP001AN,13
+Mejillones escabeche,AP001AN,2
+Mejillones escabeche,AP001AN,13
+Lubina en su jugo,AP001AN,2
+Lubina en su jugo,AP001AN,14
+Helado marino,AP001AN,4
+Solomillo ibérico,AA002AN,6
+Bacalao confitado,AA002AN,2
+Milhojas chocolate,AA002AN,4
+Pulpo a la gallega,ES003AN,2
+Pulpo a la gallega,ES003AN,14
+Salmón a la plancha,ES003AN,2
+Tarta de limón,ES003AN,4
+Jamón Ibérico,AB001CT,6
+Tosta de foie,AB001CT,6
+Arroz caldoso,AB001CT,2
+Panna cotta,AB001CT,4
+Ravioli setas,CD002CT,4
+Jarrete confitado,CD002CT,6
+Crema catalana,CD002CT,4
+Arroz negro,MN003CT,2
+Arroz negro,MN003CT,14
+Carrillera ibérica,MN003CT,6
+Mousse chocolate,MN003CT,4
+Mousse chocolate,MN003CT,12
+Jamón Ibérico,CA001VC,6
+Arròs melòs,CA001VC,2
+Bacalao al pilpil,CA001VC,2
+Tarta tatin,CA001VC,4
+Jamón Ibérico,RQ002VC,6
+Sang amb ceba,RQ002VC,2
+Arroz meloso,RQ002VC,2
+Postre cítrico,RQ002VC,4
+Merluza al horno,LR003VC,2
+Magret pato,LR003VC,6
+Cheesecake,LR003VC,4
+Jamón Ibérico,LH001GA,6
+Pulpo braseado,LH001GA,2
+Pulpo braseado,LH001GA,14
+Lubina salvaje,LH001GA,2
+Tarta queso,LH001GA,4
+Jamón Ibérico,CM002GA,6
+Percebes plancha,CM002GA,14
+Pulpo a la gallega,CM002GA,2
+Pulpo a la gallega,CM002GA,14
+Tarta queso,CM002GA,4
+Merluza en salsa,PA003GA,2
+Arroz de mar,PA003GA,2
+Arroz de mar,PA003GA,13
+Brownie,PA003GA,4
+Brownie,PA003GA,12
+Jamón Ibérico,CL001CL,6
+Calamares fritos,CL001CL,14
+Lechazo asado,CL001CL,6
+Flan casero,CL001CL,4
+Tosta de anchoa,LV002CL,2
+Jarrete horno,LV002CL,6
+Tarta manzana,LV002CL,4
+Merluza plancha,VC003CL,2
+Solomillo salsa,VC003CL,6
+Helado artesano,VC003CL,4
+Jamón Ibérico,TC001CN,6
+Ravioli mar,TC001CN,2
+Ravioli mar,TC001CN,14
+Lomo vaca,TC001CN,6
+Crema queso,TC001CN,4
+Bacalao al mojo,HP002CN,2
+Pescado del día,HP002CN,2
+Dulce de leche,HP002CN,4
+Jamón Ibérico,MB003CN,6
+Tartar atún,MB003CN,2
+Chuleta vaca,MB003CN,6
+Carne de la mancha,LC001CM,6
+Guiso tradicional,LC001CM,6
+Postre tradicional,LC001CM,4
+Arroz meloso,AM002CM,2
+Bacalao confitado,AM002CM,2
+Tarta queso,AM002CM,4
+Solomillo manchego,AE003CM,6
+Pasta fresca,AE003CM,4
+Helado artesano,AE003CM,4
+Jamón Ibérico,EO001AR,6
+Taco aragonés,EO001AR,6
+Trucha a la navarra,EO001AR,2
+Bizcocho,EO001AR,4
+Secreto ibérico,TR002AR,6
+Postre del día,TR002AR,4
+Merluza al vapor,QB003AR,2
+Solomillo ibérico,QB003AR,6
+Flan casero,QB003AR,4
+Jamón Ibérico,MS001AS,6
+Croqueta jamón,MS001AS,1
+Croqueta jamón,MS001AS,4
+Croqueta jamón,MS001AS,9
+Croqueta jamón,MS001AS,10
+Merluza Cantábrico,MS001AS,2
+Arroz con leche,MS001AS,4
+Ensalada de mar,GL002AS,2
+Bocadillo gourmet,GL002AS,6
+Asado tradicional,GL002AS,6
+Postre casero,GL002AS,4
+Pescado del dia,RA003AS,2
+Guiso local,RA003AS,6
+Tarta manzana,RA003AS,4
+Jamón Ibérico,JR001CB,6
+Tosta anchoa,JR001CB,2
+Rabo toro,JR001CB,6
+Crema catalana,JR001CB,4
+Annua tasting,AS002CB,6
+Arroz caldoso,AS002CB,2
+Lubina plancha,AS002CB,2
+Postre creativo,AS002CB,4
+Bacalao dorado,BL003CB,2
+Postre casero,BL003CB,4
+Jamón Ibérico,AS001NA,6
+Merluza a la navarra,AS001NA,2
+Flan artesano,AS001NA,4
+Txuletón,BR002NA,6
+Tarta casera,BR002NA,4
+Plato tradicional,TM003NA,6
+Bacalao al ajoarriero,LR001RI,2
+Milhojas,LR001RI,4
+Chuleta a la brasa,NM002RI,6
+Postre lacteo,NM002RI,4
+Arroz verduras,GN003RI,2
+Bacalao confitado,GN003RI,2
+Helado,GN003RI,4
+Jamón Ibérico,ER001MU,6
+Caldero murciano,ER001MU,2
+Caldero murciano,ER001MU,13
+Postre tipico,ER001MU,4
+Principal degustación,LM002MU,2
+Principal degustación,LM002MU,4
+Principal degustación,LM002MU,6
+Plato pescado,LM002MU,2
+Postre creat,LM002MU,4
+Arroz caldero,MK003MU,2
+Arroz caldero,MK003MU,13
+Entrante mar,MK003MU,2
+Entrante mar,MK003MU,13
+Solomillo,MK003MU,6
+Postre chocolate,MK003MU,4
+Postre chocolate,MK003MU,12
+Jamón Ibérico,PB001EX,6
+Tartar atún,PB001EX,2
+Arroz trufa,PB001EX,2
+Helado queso,PB001EX,4
+Secreto ibérico,SB002EX,6
+Plato fusión,SB002EX,2
+Postre del chef,SB002EX,4
+Plato principal,TR003EX,6
+Postre casero,TR003EX,4
+Jamón Ibérico,VA001IB,6
+Arroz marinero,VA001IB,2
+Arroz marinero,VA001IB,13
+Lubina playa,VA001IB,2
+Lubina playa,VA001IB,14
+Postre ibicenco,VA001IB,4
+Caldereta pescado,MM002IB,2
+Caldereta pescado,MM002IB,13
+Lechona asada,MM002IB,6
+Helado local,MM002IB,4
+Ravioli mar,JO003IB,2
+Ravioli mar,JO003IB,14
+Solomillo,JO003IB,6
+Cheesecake,JO003IB,4
+Hamburguesa Pigma,GK001MD,6
+Hamburguesa Pigma,GK001MD,10
+Hamburguesa Pigma,GK001MD,12
+Patatas rústicas,GK001MD,9
+Chicken tenders,GK001MD,1
+Chicken tenders,GK001MD,6
+Chicken tenders,GK001MD,10
+Postre pistacho,GK001MD,4
+VIPS burger,VK002MD,6
+VIPS burger,VK002MD,10
+VIPS burger,VK002MD,12
+Ensalada cesar,VK002MD,1
+Ensalada cesar,VK002MD,4
+Ensalada cesar,VK002MD,9
+Tarta queso,VK002MD,4
+Montadito jamón,CM001MD,6
+Montadito queso,CM001MD,4
+Montadito chistorra,CM001MD,6
+Rueda 5 montaditos,CM001MD,4
+Rueda 5 montaditos,CM001MD,6
+Rueda 5 montaditos,CM001MD,10
+Whopper,BK001CT,6
+Whopper,BK001CT,10
+Whopper,BK001CT,12
+Onion rings,BK001CT,9
+Nuggets,BK001CT,1
+Nuggets,BK001CT,6
+Nuggets,BK001CT,10
+Postre helado,BK001CT,4
+Tagliatella carbonara,TT001VC,4
+Bruschetta,TT001VC,4
+Lasaña,TT001VC,4
+Tiramisú,TT001VC,4
+Telepizza margarita,TP001MD,4
+Telepizza pepperoni,TP001MD,4
+Alitas bbq,TP001MD,1
+Alitas bbq,TP001MD,9
+Postre helado,TP001MD,4
+Ginos pizza quattro,GN001AN,4
+Spaghetti al pesto,GN001AN,4
+Spaghetti al pesto,GN001AN,12
+Tiramisu,GN001AN,4
+Costillas amer.,FM001AS,1
+Costillas amer.,FM001AS,9
+Hamburguesa clásica,FM001AS,6
+Hamburguesa clásica,FM001AS,10
+Hamburguesa clásica,FM001AS,12
+Nachos,FM001AS,1
+Postre brownie,FM001AS,4
+Postre brownie,FM001AS,12

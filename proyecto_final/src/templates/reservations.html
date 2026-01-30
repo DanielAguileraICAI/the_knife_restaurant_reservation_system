@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body_class %}page-reservations{% endblock %}
+
+{% block content %}
+  <div class="mb-4">
+    <h2 class="h3" style="color: var(--primary); font-weight: 700;">Mis Reservas</h2>
+    <p class="text-muted-custom">Gestiona todas tus reservas de restaurantes</p>
+  </div>
+
+  <div id="reservations-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <!-- reservations cards populated by JS -->
+  </div>
+
+{% endblock %}

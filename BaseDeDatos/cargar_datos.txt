@@ -1,0 +1,125 @@
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 9.4\\Uploads\\restaurantes.csv'
+INTO TABLE restaurantes
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@ID_RESTAURANTE_csv, @NOMBRE_csv, @CIUDAD_csv, @CCAA_csv, @TIPO_COMIDA_csv, @PRESUPUESTO_csv, @ESTRELLA_MICH_csv, @CADENA_csv)
+SET
+    ID_RESTAURANTE = REPLACE(@ID_RESTAURANTE_csv, '\r', ''),
+    NOMBRE = REPLACE(@NOMBRE_csv, '\r', ''),
+    CIUDAD = REPLACE(@CIUDAD_csv, '\r', ''),
+    CCAA = REPLACE(@CCAA_csv, '\r', ''),
+    T_COMIDA = REPLACE(@TIPO_COMIDA_csv, '\r', ''),
+    PRESUPUESTO = REPLACE(@PRESUPUESTO_csv, '\r', ''),
+    ESTRELLA_MICH = REPLACE(@ESTRELLA_MICH_csv, '\r', ''),
+    CADENA = REPLACE(@CADENA_csv, '\r', '');
+
+
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 9.4\\Uploads\\clientes.csv'
+INTO TABLE clientes
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@ID_CLIENTE_csv, @NOMBRE_csv, @NUM_TELEFONO_csv, @EMAIL_csv, @ESTUDIOS_csv, @SEXO_csv, @EDAD_csv)
+SET
+    ID_CLIENTE = @ID_CLIENTE_csv,
+    N_CLIENTE = @NOMBRE_csv,
+    NUM_TELEFONO = @NUM_TELEFONO_csv,
+    EMAIL = @EMAIL_csv,
+    ESTUDIOS = @ESTUDIOS_csv,
+    SEXO = @SEXO_csv,
+    EDAD = @EDAD_csv;
+
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 9.4\\Uploads\\platos.csv'
+INTO TABLE platos
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@ID_RESTAURANTE_csv, @N_PLATO_csv, @T_PLATO_csv, @PRECIO_csv)
+SET
+    ID_RESTAURANTE = @ID_RESTAURANTE_csv,
+    N_PLATO = @N_PLATO_csv,
+    T_PLATO = @T_PLATO_csv,
+    PRECIO = @PRECIO_csv;
+
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 9.4\\Uploads\\reservas.csv'
+INTO TABLE reservas
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@ID_RESERVA_csv, @ID_CLIENTE_csv, @NUM_PERSONAS_csv, @FECHA_RESERVA_csv, @HORA_RESERVA_csv, @ID_RESTAURANTE_csv, @ESTADO_RESERVA_csv)
+SET
+    ID_RESERVA = @ID_RESERVA_csv,
+    ID_CLIENTE = @ID_CLIENTE_csv,
+    NUM_PERSONAS = @NUM_PERSONAS_csv,
+    FECHA_RESERVA = @FECHA_RESERVA_csv,
+    HORA_RESERVA = @HORA_RESERVA_csv,
+    ID_RESTAURANTE = @ID_RESTAURANTE_csv,
+    ESTADO_RESERVA = @ESTADO_RESERVA_csv;
+
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 9.4\\Uploads\\facturas2.csv'
+INTO TABLE facturas
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@ID_FACTURA_csv, @ID_CLIENTE_csv, @ID_RESERVA_csv, @PRECIO_csv, @FECHA_FACTURA_csv, @ID_RESTAURANTE_csv, @VALORACION_csv, @TIPO_VISITA_csv)
+SET
+    ID_FACTURA = REPLACE(@ID_FACTURA_csv, '\r', ''),
+    ID_CLIENTE = REPLACE(@ID_CLIENTE_csv, '\r', ''),
+    ID_RESERVA = NULLIF(REPLACE(@ID_RESERVA_csv, '\r', ''), ''),
+    PRECIO = REPLACE(@PRECIO_csv, '\r', ''),
+    VALORACION = NULLIF(REPLACE(@VALORACION_csv, '\r', ''), ''),
+    TIPO_VISITA = REPLACE(@TIPO_VISITA_csv, '\r', ''),
+    FECHA_FACTURA = REPLACE(@FECHA_FACTURA_csv, '\r', ''),
+    ID_RESTAURANTE = REPLACE(@ID_RESTAURANTE_csv, '\r', '');
+
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 9.4\\Uploads\\alergenos.csv'
+INTO TABLE alergenos
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@ALERGENO_csv, @NUM_ALERGENO_csv)
+SET
+    ALERGENO = REPLACE(@ALERGENO_csv, '\r', ''),
+    NUM_ALERGENO = REPLACE(@NUM_ALERGENO_csv, '\r', '');
+
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 9.4\\Uploads\\alergias.csv'
+INTO TABLE alergias
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@N_PLATO_csv, @ID_RESTAURANTE_csv, @NUM_ALERGENO_csv)
+SET
+    ID_RESTAURANTE = REPLACE(@ID_RESTAURANTE_csv, '\r', ''),
+    N_PLATO = REPLACE(@N_PLATO_csv, '\r', ''),
+    NUM_ALERGENO = REPLACE(@NUM_ALERGENO_csv, '\r', '');
+
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 9.4\\Uploads\\comandas.csv'
+INTO TABLE comandas
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@ID_FACTURA_csv, @N_PLATO_csv, @NUM_PEDIDOS_csv, @ID_RESTAURANTE_csv)
+SET
+    N_PLATO = REPLACE(@N_PLATO_csv, '\r', ''),
+    ID_FACTURA = REPLACE(@ID_FACTURA_csv, '\r', ''),
+    ID_RESTAURANTE = REPLACE(@ID_RESTAURANTE_csv, '\r', ''),
+    NUM_PEDIDOS = REPLACE(@NUM_PEDIDOS_csv, '\r', '');
+
+

@@ -1,0 +1,359 @@
+:root{
+  /* Paleta Azulada Premium */
+  --primary: #0A7AFF;
+  --primary-dark: #0651B8;
+  --primary-light: #4DA3FF;
+  --secondary: #00D4FF;
+  --dark-navy: #0A1929;
+  --dark-blue: #1A2F4A;
+  --light-gray: #F8FAFC;
+  --muted: #64748B;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(10, 122, 255, 0.2);
+  --glass-shadow: 0 8px 32px rgba(10, 26, 41, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #0A1929 0%, #1A2F4A 50%, #0A7AFF 100%);
+  background-attachment: fixed;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(ellipse at 20% 30%, rgba(0, 212, 255, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(10, 122, 255, 0.2) 0%, transparent 50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ===== NAVBAR ===== */
+nav.navbar {
+  background: rgba(10, 26, 41, 0.95) !important;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(10, 122, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--secondary) !important;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--secondary) !important;
+  transform: translateY(-2px);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%) !important;
+  border: none !important;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(10, 122, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(10, 122, 255, 0.5);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-left: 5px solid var(--primary);
+  border-radius: 20px;
+  box-shadow: var(--glass-shadow);
+  padding: 3rem;
+  transition: all 0.3s ease;
+}
+
+.hero:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(10, 122, 255, 0.2);
+}
+
+.hero h1 {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero .lead {
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 16px;
+  box-shadow: var(--glass-shadow);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(10, 122, 255, 0.25);
+  border-color: var(--primary) !important;
+}
+
+.card-restaurant {
+  position: relative;
+}
+
+.card-restaurant::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.card-restaurant:hover::before {
+  transform: scaleX(1);
+}
+
+.restaurant-name {
+  font-weight: 700;
+  color: var(--dark-navy);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.badge-michelin {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.badge-presupuesto {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: #fff;
+}
+
+/* ===== FILTROS ===== */
+.filter-section {
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--glass-shadow);
+}
+
+.filter-label {
+  font-weight: 600;
+  color: var(--dark-navy);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-control, .form-select {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 2px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(10, 122, 255, 0.1);
+  outline: none;
+}
+
+/* ===== LOADING ANIMATION ===== */
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: var(--primary);
+}
+
+.spinner {
+  border: 4px solid rgba(10, 122, 255, 0.2);
+  border-top: 4px solid var(--primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: auto;
+  background: rgba(10, 26, 41, 0.95) !important;
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(10, 122, 255, 0.3);
+  padding: 2rem 0;
+}
+
+footer .text-light {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* ===== UTILITIES ===== */
+.text-muted-custom {
+  color: var(--muted) !important;
+}
+
+.star-icon {
+  color: #FFD700;
+  filter: drop-shadow(0 2px 4px rgba(255, 215, 0, 0.3));
+}
+
+.btn-outline-primary {
+  border: 2px solid var(--primary) !important;
+  color: var(--primary) !important;
+  background: transparent !important;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(10, 122, 255, 0.4);
+}
+
+/* ===== TABS (Área Cliente) ===== */
+.nav-tabs {
+  border-bottom: 2px solid var(--glass-border);
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  padding: 0.5rem;
+  border-radius: 12px 12px 0 0;
+}
+
+.nav-tabs .nav-link {
+  color: var(--dark-navy) !important;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 0 0.25rem;
+}
+
+.nav-tabs .nav-link:hover {
+  background: rgba(10, 122, 255, 0.1);
+  color: var(--primary) !important;
+  transform: translateY(-2px);
+}
+
+.nav-tabs .nav-link.active {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%) !important;
+  color: white !important;
+  box-shadow: 0 4px 15px rgba(10, 122, 255, 0.3);
+  border: none;
+}
+
+.tab-content {
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  border-radius: 0 0 12px 12px;
+  padding: 1.5rem;
+  margin-top: -1px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .filter-section {
+    padding: 1rem;
+  }
+  
+  .nav-tabs .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
